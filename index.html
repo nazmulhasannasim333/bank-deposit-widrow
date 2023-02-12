@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baper Bank</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:ital,wght@1,300;1,400&family=Work+Sans:ital,wght@0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dc547d5d7c.js" crossorigin="anonymous"></script>
+  <style>
+    *{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.header{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #070606a6, #000000b5),url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4%;
+}
+nav img{
+  width: 170px;
+}
+.nav-link{
+  text-align: right;
+}
+.nav-link ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 7px 13px;
+}
+.nav-link ul li a{
+  text-decoration: none;
+  color: #f6eeee;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-link ul li::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #ffae00;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+.text-box p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #cfcccc;
+  margin-bottom: 30px;
+}
+.primary-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  padding: 12px 14px ;
+  border: 1px solid #fff;
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.primary-btn:hover{
+  border: 1px solid #f78401;
+  background-color: #f78401;
+  transition: 0.5s;
+}
+nav .fa-solid{
+  display: none;
+}
+@media screen and (max-width: 776px) {
+  .text-box h1{
+    font-size: 20px;
+  }
+  .text-box p{
+    font-size: 12px;
+  }
+  .nav-link ul li{
+    display: block;
+  }
+  nav img{
+    width: 160px;
+    
+  }
+  .nav-link {
+    position: absolute;
+    background-color: #fb8907;
+    height: 100vh;
+    width: 150px;
+    text-align: left;
+    top: 0;
+    left: -200px;
+    z-index: 2;
+
+  }
+  nav .fa-solid{
+    display: block;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .nav-link ul{
+    padding: 20px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="">
+      </a>
+      <div class="nav-link">
+        <i class="fa-solid fa-xmark"></i>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Course</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Welcome to Baper Bank</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum assumenda reiciendis possimus, provident voluptatem cum qui quas dignissimos veritatis aliquid autem laboriosam quod incidunt ratione magni laborum</p>
+      <a id="reg-btn" href="registration.html"  class="primary-btn" >Registration</a>
+      <a id="log-btn" href="login.html" class="primary-btn">Login</a>
+    </div>
+  </header>
+</body>
+</html>
